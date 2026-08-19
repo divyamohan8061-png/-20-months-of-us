@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>20 Months of Us ❤️</title>
 
 <style>
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -18,16 +21,17 @@ body{
     color:white;
     text-align:center;
     min-height:100vh;
+    overflow-x:hidden;
 }
 
 .container{
-    max-width:850px;
+    max-width:900px;
     margin:auto;
-    padding:70px 25px;
+    padding:60px 22px;
 }
 
 .heart{
-    font-size:55px;
+    font-size:60px;
     animation:beat 1.5s infinite;
 }
 
@@ -37,14 +41,65 @@ h1{
 }
 
 .subtitle{
-    font-size:20px;
-    opacity:.85;
+    font-size:21px;
+    opacity:.9;
+    letter-spacing:2px;
 }
 
 .date{
     margin:25px 0;
-    font-size:18px;
+    font-size:17px;
+    opacity:.8;
 }
+
+
+/* PHOTO GALLERY */
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:40px 0;
+}
+
+.photos img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:22px;
+    border:2px solid rgba(255,255,255,.35);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+    transition:.4s;
+}
+
+.photos img:hover{
+    transform:scale(1.04);
+}
+
+
+/* SONG */
+
+.music-box{
+    margin:35px auto;
+    padding:25px;
+    max-width:550px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+}
+
+.music-title{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+audio{
+    width:100%;
+}
+
+
+/* LETTER */
 
 .card{
     margin-top:35px;
@@ -55,28 +110,44 @@ h1{
     line-height:1.8;
     font-size:17px;
     backdrop-filter:blur(10px);
+    text-align:left;
 }
+
+.card p{
+    margin-bottom:5px;
+}
+
+
+/* END MESSAGE */
 
 .highlight{
     margin-top:35px;
     font-size:25px;
     font-style:italic;
+    line-height:1.7;
 }
+
+
+/* BUTTON */
 
 button{
     margin-top:30px;
-    padding:13px 28px;
+    padding:14px 30px;
     border:none;
     border-radius:30px;
     background:#ff4f81;
     color:white;
     font-size:16px;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-    transform:scale(1.05);
+    transform:scale(1.08);
 }
+
+
+/* FOOTER */
 
 .footer{
     margin-top:50px;
@@ -84,103 +155,353 @@ button:hover{
     font-size:14px;
 }
 
-@keyframes beat{
-    0%,100%{transform:scale(1)}
-    50%{transform:scale(1.2)}
+
+/* FLOATING HEARTS */
+
+.floating-heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    pointer-events:none;
+    animation:float 6s linear forwards;
 }
+
+@keyframes beat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .container{
+        padding:45px 15px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .subtitle{
+        font-size:17px;
+    }
+
+    .date{
+        font-size:14px;
+    }
+
+    .photos{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .photos img{
+        height:220px;
+    }
+
+    .card{
+        padding:22px;
+        font-size:15px;
+    }
+
+    .highlight{
+        font-size:20px;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-    <div class="heart">❤️</div>
 
-    <h1>PANDU DIVYASREE GAIKWAD</h1>
+<!-- TITLE -->
 
-    <p class="subtitle">20 Months of Us</p>
+<div class="heart">
+❤️
+</div>
 
-    <p class="date">December 20, 2024 — August 20, 2026</p>
+<h1>
+PANDU DIVYASREE GAIKWAD
+</h1>
 
-    <div class="card">
+<p class="subtitle">
+20 Months of Us
+</p>
 
-        <p>
-        To My Angry Cupcake🧁 
+<p class="date">
+December 20, 2024 — August 20, 2026
+</p>
 
-   20 months ayipoyayi… and sometimes nake surprising ga untundi, 
-      manam intha close ela ayyam ani...!?🤔Nuvvu naa life lo ila 
-important person avuthav ani first month lo nenu eppudu anukoledu...
-  
-        </p>
 
-        <br>
+<!-- 6 PHOTOS -->
 
-        <p>
-        Kani ippudu naa daily life lo jarige chinna chinna things
-        kuda neetho share cheskovali anipisthundi.
-        </p>
+<div class="photos">
 
-        <br>
+<img src="photo1.jpg" alt="Our Memory 1">
 
-        <p>
-        Mana relationship lo everything perfect ga ledhu❌ Fights unnayi, 
- misunderstandings unnayi, konni moments lo okarini okaram hurt cheskuntunam 
-kuda baaga...💔😖Kani anni unna kuda, ~~ninnu naa life nunchi remove cheskovali 
-ani naa heart eppudu anukoledu, Because I trust that " MANAM PERFECT KAKAPOVACHU, 
-  BUT MANAM REAL GA, RAW GA, TRANSPARENT GA UNAM" I think relationship lo transparent 
-  ga undadam kante inkem perfection untundhi cheppu✅
-      
-        </p>
+<img src="photo2.jpg" alt="Our Memory 2">
 
-        <br>
+<img src="photo3.jpg" alt="Our Memory 3">
 
-        <p>
-        20 months ayina… naa favourite thing about us is still “US🫂”
-Nuvvu naa pakkana unte, even normal days kuda konchem special ga anipisthayi❤️
-So please fight ayaka kooda ekuva space teeskoku, Ee chinni gunde niku dhooram 
-ga undaledhu 🥺
+<img src="photo4.jpg" alt="Our Memory 4">
 
-        </p>
+<img src="photo5.jpg" alt="Our Memory 5">
 
-        <br>
-
-        <p>
-        And if someday you ask me, “After everything,After 100000+ fights ,
-  would you still choose me?”
-        </p>
-
-        <br>
-
-        <p>
-        My answer will always be…
-
-“I never stopped choosing you & I will never stop choosing you"♾️🥹💕
-  
-        </p>
-
-    </div>
-
-    <div class="highlight">
-Happy 20th month anniversary to US ... LOVE U MY HONEYPIE 🤌🏻😭💋
-
-    </div>
-
-    <button onclick="showMessage()">
-        Tap Here ❤️
-    </button>
-
-    <div class="footer">
-        Made with love • 20 Months of Us ♾️
-    </div>
+<img src="photo6.jpg" alt="Our Memory 6">
 
 </div>
 
+
+<!-- SONG -->
+
+<div class="music-box">
+
+<div class="music-title">
+🎵 Our Song ❤️
+</div>
+
+<audio controls>
+
+<source src="song.mp3" type="audio/mpeg">
+
+Your browser does not support audio.
+
+</audio>
+
+</div>
+
+
+<!-- LOVE LETTER -->
+
+<div class="card">
+
+
+<p>
+<b>To My Angry Cupcake 🧁</b>
+</p>
+
+<br>
+
+
+<p>
+20 months ayipoyayi… and sometimes nake surprising ga untundi,
+manam intha close ela ayyam ani...!? 🤔
+Nuvvu naa life lo ila important person avuthav ani
+first month lo nenu eppudu anukoledu...
+</p>
+
+<br>
+
+
+<p>
+Kani ippudu naa daily life lo jarige chinna chinna things
+kuda neetho share cheskovali anipisthundi.
+</p>
+
+<br>
+
+
+<p>
+Mana relationship lo everything perfect ga ledhu ❌
+Fights unnayi, misunderstandings unnayi,
+konni moments lo okarini okaram hurt cheskuntunam
+kuda baaga... 💔😖
+</p>
+
+<br>
+
+
+<p>
+Kani anni unna kuda,
+<b>
+ninnu naa life nunchi remove cheskovali ani
+naa heart eppudu anukoledu.
+</b>
+</p>
+
+<br>
+
+
+<p>
+Because I trust that
+<b>
+"MANAM PERFECT KAKAPOVACHU,
+BUT MANAM REAL GA, RAW GA, TRANSPARENT GA UNAM."
+</b>
+</p>
+
+<br>
+
+
+<p>
+I think relationship lo transparent ga undadam kante
+inkem perfection untundhi cheppu ✅
+</p>
+
+<br>
+
+
+<p>
+20 months ayina…
+naa favourite thing about us is still
+<b>“US 🫂”</b>
+</p>
+
+<br>
+
+
+<p>
+Nuvvu naa pakkana unte,
+even normal days kuda konchem special ga anipisthayi ❤️
+</p>
+
+<br>
+
+
+<p>
+So please fight ayaka kooda ekuva space teeskoku,
+ee chinni gunde niku dhooram ga undaledhu 🥺
+</p>
+
+<br>
+
+
+<p>
+And if someday you ask me,
+<b>
+“After everything, After 100000+ fights,
+would you still choose me?”
+</b>
+</p>
+
+<br>
+
+
+<p>
+My answer will always be…
+</p>
+
+<br>
+
+
+<p>
+<b>
+“I never stopped choosing you
+& I will never stop choosing you” ♾️🥹💕
+</b>
+</p>
+
+
+</div>
+
+
+<!-- FINAL MESSAGE -->
+
+<div class="highlight">
+
+Happy 20th month anniversary to US... ❤️
+
+<br>
+
+LOVE U MY HONEYPIE 🤌🏻😭💋
+
+</div>
+
+
+<!-- SURPRISE BUTTON -->
+
+<button onclick="showMessage()">
+
+Tap Here ❤️
+
+</button>
+
+
+<div class="footer">
+
+Made with love • 20 Months of Us ♾️
+
+</div>
+
+
+</div>
+
+
 <script>
+
+
+/* SURPRISE MESSAGE */
+
 function showMessage(){
-    alert("Happy 20 to us pandulu! ❤️\n\nStill you. Always you. ♾️");
+
+alert(
+"Happy 20 to us pandulu! ❤️\n\n" +
+"Still you. Always you. ♾️🥹💕"
+);
+
 }
+
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="floating-heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(function(){
+
+heart.remove();
+
+},8000);
+
+}
+
+setInterval(createHeart,700);
+
+
 </script>
+
 
 </body>
 </html>
